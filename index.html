@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <div class="bell-icon">
+            <!--SVG-->
+            <div id="notifications"></div>
+        </div>
+        <img src="" alt="">
+        <h3></h3>
+    </header>
+    <nav>
+        <a href=""><img src="" alt=""></a>
+    </nav>
+    <main>
+        <div class="main-header">
+            <h2 class="headline">Dashboard</h2>
+            <div class="main-header-search">
+                <input type="search" placeholder="Search...">
+            </div>
+            <div class="alert" id="alert">
+                <!-- JS -->
+            </div>
+        </div>
+        <section class="traffic">
+            <div class="traffic-header">
+                <h3>Traffic</h3>
+                <ul class="traffic-nav">
+                    <li class="traffic-nav-link">Hourly</li>
+                    <li class="traffic-nav-link">Daily</li>
+                    <li class="traffic-nav-link" active>Weekly</li>
+                    <li class="traffic-nav-link">Monthly</li>
+                </ul>
+            </div>
+            <div class="widget-container-full">
+                <!-- element link graph will attatch too -->
+                <canvas class="traffic-chart"></canvas>
+            </div>
+        </section>
+        <section class="daily">
+            <h3>Daily Traffic</h3>
+            <div class="widget-container-half">
+                <canvas id="daily-chart"></canvas>
+            </div>
+        </section>
+
+        <section class="social">
+            <h3>Social Stats</h3>
+            <div class="social-container">
+                <div class="social-image">
+                    <!--Inline SVG -->
+                </div>
+                <div class="social-text">
+                    <p>Twitter</p>
+                    <p>10,345</p>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="social-image">
+                    <!--Inline SVG -->
+                </div>
+                <div class="social-text">
+                    <p>Facebook</p>
+                    <p>22,320</p>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="social-image">
+                    <!--Inline SVG -->
+                </div>
+                <div class="social-text">
+                    <p>Instagram</p>
+                    <p>16,445</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="members">
+            <h3>New Members</h3>
+            <div class="member-container">
+                <div class="member-image">
+                    <img src="/images/member-1.jpg" alt="profile image of Victoria" class="profile-image">
+                </div>
+                <div class="member-text">
+                    <p>Victoria Chambers</p>
+                    <a href="#">victoria.chamgers80@example.com</a>
+                    <p>10/15/21</p>
+                </div>
+            </div>
+            <div class="member-container">
+                <div class="member-image">
+                    <img src="/images/member-2.jpg" alt="profile image of Dale" class="profile-image">
+                </div>
+                <div class="member-text">
+                    <p>Dale Byrd</p>
+                    <a href="#">dale.byrd62@example.com</a>
+                    <p>10/15/21</p>
+                </div>
+            </div>
+            <div class="member-container">
+                <div class="member-image">
+                    <img src="/images/member-3.jpg" alt="profile image of Dawn" class="profile-image">
+                </div>
+                <div class="member-text">
+                    <p>Dawn Wood</p>
+                    <a href="#">dawn.wood16@example.com</a>
+                    <p>10/15/21</p>
+                </div>
+            </div>
+            <div class="member-container">
+                <div class="member-image">
+                    <img src="/images/member-4.jpg" alt="profile image of Dan" class="profile-image">
+                </div>
+                <div class="member-text">
+                    <p>Dan Oliver</p>
+                    <a href="#">dan.oliver60@example.com</a>
+                    <p>10/15/21</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-activity">
+            <h3>Recent Activity</h3>
+            <div class="activity-container">
+                <div class="activity-image">
+                    <img src="/images/member-1.jpg" alt="profile image of Victoria" class="profile-image">
+                </div>
+                <div class="activity-text">
+                    <p>Victoria Chambers commented on <b><em>WebApp's SEO tips</em></b></p>
+                    <p>4 hours ago</p>
+                </div>
+            </div>
+            <div class="activity-container">
+                <div class="activity-image">
+                   <img src="/images/member-2.jpg" alt="profile image of Dale" class="profile-image">
+                </div>
+                <div class="activity-text">
+                    <p>Dale Byrd like the post <b><em>Facebook's Changes for 2022</em></b></p>
+                    <p>5 hours ago</p>
+                </div>
+            </div>
+            <div class="activity-container">
+                <div class="activity-image">
+                    <img src="/images/member-3.jpg" alt="profile image of Dawn" class="profile-image">
+                </div>
+                <div class="activity-text">
+                    <p>Dawn Wood commented on <b><em>Facebook's Changes for 2022</em></b></p>
+                    <p>5 hours ago</p>
+                </div>
+            </div>
+            <div class="activity-container">
+                <div class="activity-image">
+                    <img src="/images/member-4.jpg" alt="profile image of Dan" class="profile-image">
+                </div>
+                <div class="activity-text">
+                    <p>Dan Oliver posted <b><em>WebApp's SEO tips</em></b></p>>
+                    <p>1 day ago</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
