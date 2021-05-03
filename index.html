@@ -44,7 +44,7 @@
                 </div>
                 <div class="widget-container-full">
                     <!-- element link graph will attatch too -->
-                    <canvas class="traffic-chart"></canvas>
+                    <canvas id="traffic-chart"></canvas>
                 </div>
             </section>
 
@@ -52,6 +52,13 @@
                 <h3>Daily Traffic</h3>
                 <div class="widget-container-half">
                     <canvas id="daily-chart"></canvas>
+                </div>
+            </section>
+
+            <section class="mobile">
+                <h3>Mobile Users</h3>
+                <div class="widget-container-half">
+                    <canvas id="mobile-chart"></canvas>
                 </div>
             </section>
 
@@ -179,7 +186,7 @@
             <section class="message">
                 <h3>Message User</h3>
                 <form class="widget-container">
-                    <input type="text" placeholder="Search for a user" class="form-field" id="userfield">
+                    <input type="text" placeholder="Search for a user" class="form-field" id="userField">
                     <textarea id="messagefield" class="form-area" placeholder="Message for user"></textarea>
                     <button class="button-primary" id="send">Send</button>
                 </form>
@@ -201,5 +208,7 @@
             </section>
         </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.js" integrity="sha512-opXrgVcTHsEVdBUZqTPlW9S8+99hNbaHmXtAdXXc61OUU6gOII5ku/PzZFqexHXc3hnK8IrJKHo+T7O4GRIJcw==" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
