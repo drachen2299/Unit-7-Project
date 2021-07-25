@@ -121,13 +121,13 @@ main {
 }
 
 section {
-    border-bottom: solid 1px rgba(100, 84, 84, 0.705);
+    border-bottom: solid rgba(100, 84, 84, 0.705);
     padding: 5px;
 }
 
-section > div {
+/* section > div {
     text-align: center;
-}
+} */
 
 .widget-container-full, .widget-container-half {
     max-width: 90vw;
@@ -136,44 +136,75 @@ section > div {
 /*--------------------------------------------------------
                         Social
 ---------------------------------------------------------- */
-.social {
 
-}
-.social-panels {
-    
-    
-}
 .social-container {
-    background-color: rgba(255, 226, 226, 0.705);
-    margin-left: 20px;
+    display: flex;
+    margin: 10px;
+    background-color: rgba(243, 243, 243, 0.705);
     border: 2px solid rgb(173, 143, 143);
     border-radius: 5px;
 }
 .social-image {
     background-color: #846cc4;
-    width: 100px;
-    height: 100px;
+    margin: 20px 15px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+ .social-text {
+    margin: 20px 15px;
+ }
+ .social-text>h6 {
+     color: #846cc4;
+ }
 
+.social-text>h1 {
+    color: #857d7d;
+}
 .social-image > svg {
-    width: 50px;
+    width: 30px;
     fill: #fff;
 }
+/*--------------------------------------------------------
+                        Members
+---------------------------------------------------------- */
 
+.member-container, .activity-container {
+    text-align: center;
+    padding: 5px;
+}
 
+.profile-image {
+    width: 60px;
+}
 
+.member-text>a {
+    text-decoration: none;
+}
 
 .social-image, .profile-image {
     border-radius: 50%;
+    
 }
+.member-container, .activity-container:after {
+    content: "";
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+    border-bottom: solid rgba(100, 84, 84, 0.705);
+
+
+}
+/*--------------------------------------------------------
+                        Media Queries
+---------------------------------------------------------- */
+
 @media (min-width: 321px) {
   
-    
-    
-    ul {
+   ul {
         text-align: end;
     }
 }
@@ -191,13 +222,13 @@ section > div {
     .main-header {
         grid-column: 1 / span 2;
     }
-    .traffic, .social {
+    .traffic, .social, .recent-activity, .members {
         grid-column: 1 / span 2;
     }
-    .daily, .members, .message {
+    .daily, .message {
         grid-column: 1 / span 1;
     }
-    .mobile, .activity, .settings {
+    .mobile, .settings {
         grid-column: 2 / span 1;
     }
 
@@ -208,12 +239,27 @@ section > div {
     .widget-container-half {
         width: 35vw;
     }
+
+    .mobile {
+        border-left: solid rgba(100, 84, 84, 0.705);
+        
+    }
     
     .nav-icon {
         padding: 10px;
     }
-    #mobile-chart {
-        max-height: 324px;
+    
+
+    .social-panels {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-container {
+        width: 30%;
     }
     
+    .member-container {
+        display: flex;
+    }
 }
