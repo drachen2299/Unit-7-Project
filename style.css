@@ -170,9 +170,10 @@ section {
 /*--------------------------------------------------------
                         Members
 ---------------------------------------------------------- */
-
-.member-container, .activity-container {
+.member-container {
     text-align: center;
+}
+.member-container, .activity-container {    
     padding: 5px;
 }
 
@@ -188,7 +189,9 @@ section {
     border-radius: 50%;
     
 }
-.member-container, .activity-container:after {
+
+
+.member-container, .activity-container {
     content: "";
     padding-top: 10px;
     display: block;
@@ -197,6 +200,28 @@ section {
     border-bottom: solid rgba(100, 84, 84, 0.705);
 
 
+}
+/*--------------------------------------------------------
+                        Form
+---------------------------------------------------------- */
+form {
+    display: inline;
+}
+#userField,
+button,
+select {
+    width: 100%;
+}
+#userField,
+#messagefield,
+.form-field {
+    background-color: rgba(255, 226, 226, 0.705);
+    border: none;
+}
+#messagefield {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
 }
 /*--------------------------------------------------------
                         Media Queries
@@ -259,7 +284,21 @@ section {
         width: 30%;
     }
     
-    .member-container {
+    .member-container,.activity-container {
         display: flex;
+    }
+    .activity-text {
+        width: 100%;
+    }
+    .activity-text>p {
+        display: inline-block;
+    }
+}
+@media (min-width: 1024px) {
+    .members {
+        grid-column: 1 / span 1;
+    }
+    .recent-activity  {
+        grid-column: 2 / span 1;
     }
 }
