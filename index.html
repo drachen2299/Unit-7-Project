@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle-switch.css">
     <title>WebApp</title>
 </head>
 
@@ -214,8 +215,34 @@
 
             <section class="settings">
                 <h3>Settings</h3>
-                <!--custom CSS toggle code-->
-                <!--custom CSS toggle code-->
+                <div class="toggle-switches">
+                    <label class="switch-light switch-ios" onclick="">
+                        <input type="checkbox">
+                    
+                        <strong>
+                          Send email notifications
+                        </strong>
+                    
+                        <span class="radio-toggle">
+                          <span>Off</span>
+                          <span>On</span>
+                          <a></a>
+                        </span>
+                      </label>
+                      <label class="switch-light switch-ios" onclick="">
+                        <input type="checkbox">
+                    
+                        <strong>
+                          Set profile to public
+                        </strong>
+                    
+                        <span class="radio-toggle">
+                          <span>Off</span>
+                          <span>On</span>
+                          <a></a>
+                        </span>
+                      </label>
+                </div>
                 <select id="timezone" class="form-field">
                     <option disabled selected>Select a Timezone</option>
                     <option value="Eastern">Eastern</option>

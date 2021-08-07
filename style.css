@@ -37,11 +37,9 @@
     text-align: center;
     background-color: #4bc96e;
     border-radius: 25px;
-}
-
-.traffic-nav-link>a:hover {
     color: #fff;
 }
+
 
 .traffic>h3 {
     padding-bottom: 25px;
@@ -242,7 +240,17 @@ select {
 
 #save,
 #cancel {
-    width: 49.5%;
+    flex-grow: 2;
+    min-width: 49.4%;
+}
+
+.toggle-switches > label {
+    display: flex;
+    justify-content: space-around;
+} 
+
+.radio-toggle {
+    max-width: 100px;
 }
 
 #userField,
@@ -290,17 +298,17 @@ select {
     .traffic,
     .social,
     .recent-activity,
-    .members {
+    .members,
+    .message,
+    .settings {
         grid-column: 1 / span 2;
     }
 
-    .daily,
-    .message {
+    .daily {
         grid-column: 1 / span 1;
     }
 
-    .mobile,
-    .settings {
+    .mobile {
         grid-column: 2 / span 1;
     }
 
@@ -353,6 +361,12 @@ select {
     }
 
     .recent-activity {
+        grid-column: 2 / span 1;
+    }
+    .message {
+        grid-column: 1 / span 1;
+    }
+    .settings {
         grid-column: 2 / span 1;
     }
 }
